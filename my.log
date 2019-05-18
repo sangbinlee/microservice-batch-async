@@ -1,0 +1,62 @@
+2019-05-14 13:46:56.811  INFO 14260 --- [restartedMain] c.t.m.MicroserviceBatchAsyncApplication  : Starting MicroserviceBatchAsyncApplication on lsv9-PC with PID 14260 (C:\Users\lsv9\Documents\workspace-spring-tool-suite-4-4.2.1.RELEASE\microservice-batch-async\target\classes started by lsv9 in C:\Users\lsv9\Documents\workspace-spring-tool-suite-4-4.2.1.RELEASE\microservice-batch-async)
+2019-05-14 13:46:56.812  INFO 14260 --- [restartedMain] c.t.m.MicroserviceBatchAsyncApplication  : No active profile set, falling back to default profiles: default
+2019-05-14 13:46:57.093  INFO 14260 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-05-14 13:46:57.095  INFO 14260 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-14 13:46:57.102  INFO 14260 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-05-14 13:46:57.126  INFO 14260 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-14 13:46:57.127  INFO 14260 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 311 ms
+2019-05-14 13:46:57.148  INFO 14260 --- [restartedMain] c.t.microservicebatchasync.conf.QRouter  : [route]  route =[restartedMain]
+2019-05-14 13:46:57.203  INFO 14260 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-14 13:46:57.238  INFO 14260 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2019-05-14 13:46:57.254  INFO 14260 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-05-14 13:46:57.266  INFO 14260 --- [scheduling-1] c.t.m.component.ScheduledTasks           : ★★★★★ [ JOB-1. [ms] PNR UPDATE용 PNR 목록 가져오기 ]---  The time is now 13:46:57
+2019-05-14 13:46:57.273  INFO 14260 --- [scheduling-1] c.t.m.component.ScheduledTasks           : [STEP-1]  Q 조회 API 호출 =[scheduling-1]
+2019-05-14 13:46:57.277  INFO 14260 --- [scheduling-1] c.t.m.component.ScheduledTasks           : [STEP-2]  Q 조회 결과 있으면 Q 관리 테이블  저장=[scheduling-1]
+2019-05-14 13:46:57.281  INFO 14260 --- [scheduling-1] c.t.m.component.ScheduledTasks           : [STEP-3]  Q 관리 테이블 PNR 조회(신규 또는 실패)=[scheduling-1]
+2019-05-14 13:46:57.270  INFO 14260 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-05-14 13:46:57.297  INFO 14260 --- [restartedMain] c.t.m.MicroserviceBatchAsyncApplication  : Started MicroserviceBatchAsyncApplication in 0.513 seconds (JVM running for 225.187)
+2019-05-14 13:46:57.302  INFO 14260 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-05-14 13:46:57.315  INFO 14260 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-14 13:46:57.316  INFO 14260 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-05-14 13:46:57.319  INFO 14260 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2019-05-14 13:46:57.323  WARN 14260 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotAcceptableException: Could not find acceptable representation]
+2019-05-14 13:46:57.328  INFO 14260 --- [scheduling-1] c.t.m.component.ScheduledTasks           : ★★★★★ [ JOB-2. [ms] PNR UPDATE 건건이 호출 (async - webclient)]---  The time is now 13:46:57
+2019-05-14 13:46:57.333  INFO 14260 --- [scheduling-1] c.t.m.component.ScheduledTasks           : [STEP-1]  PNR UPDATE 용  파라미터 세팅 =[scheduling-1]
+2019-05-14 13:46:57.336  INFO 14260 --- [scheduling-1] c.t.m.component.ScheduledTasks           : ★★★★★ [ JOB-3. [ms] PNR UPDATE 성공시 Q 삭제 API 건건이 호출(async - webclient) ]---  The time is now 13:46:57
+2019-05-14 13:46:59.731  INFO 14260 --- [Thread-55] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2019-05-14 13:46:59.738  INFO 14260 --- [Thread-55] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-05-14 14:06:18.758  INFO 3376 --- [restartedMain] c.t.m.MicroserviceBatchAsyncApplication  : Starting MicroserviceBatchAsyncApplication on lsv9-PC with PID 3376 (C:\Users\lsv9\Documents\workspace-spring-tool-suite-4-4.2.1.RELEASE\microservice-batch-async\target\classes started by lsv9 in C:\Users\lsv9\Documents\workspace-spring-tool-suite-4-4.2.1.RELEASE\microservice-batch-async)
+2019-05-14 14:06:18.762  INFO 3376 --- [restartedMain] c.t.m.MicroserviceBatchAsyncApplication  : No active profile set, falling back to default profiles: default
+2019-05-14 14:06:19.223  INFO 3376 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-05-14 14:06:19.226  INFO 3376 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-14 14:06:19.227  INFO 3376 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-05-14 14:06:19.257  INFO 3376 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-14 14:06:19.259  INFO 3376 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 493 ms
+2019-05-14 14:06:19.292  INFO 3376 --- [restartedMain] c.t.microservicebatchasync.conf.QRouter  : [route]  route =[restartedMain]
+2019-05-14 14:06:19.371  INFO 3376 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-14 14:06:19.430  INFO 3376 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2019-05-14 14:06:19.455  INFO 3376 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-05-14 14:06:19.575  INFO 3376 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-05-14 14:06:19.502  INFO 3376 --- [scheduling-1] c.t.m.component.ScheduledTasks           : ★★★★★ [ JOB-1. [ms] PNR UPDATE용 PNR 목록 가져오기 ]---  The time is now 14:06:19
+2019-05-14 14:06:19.628  INFO 3376 --- [restartedMain] c.t.m.MicroserviceBatchAsyncApplication  : Started MicroserviceBatchAsyncApplication in 0.922 seconds (JVM running for 107.062)
+2019-05-14 14:06:19.632  INFO 3376 --- [scheduling-1] c.t.m.component.ScheduledTasks           : [STEP-1]  Q 조회 API 호출 =[scheduling-1]
+2019-05-14 14:06:19.638  INFO 3376 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-05-14 14:06:19.647  INFO 3376 --- [scheduling-1] c.t.m.component.ScheduledTasks           : [STEP-2]  Q 조회 결과 있으면 Q 관리 테이블  저장=[scheduling-1]
+2019-05-14 14:06:19.654  INFO 3376 --- [scheduling-1] c.t.m.component.ScheduledTasks           : [STEP-3]  Q 관리 테이블 PNR 조회(신규 또는 실패)=[scheduling-1]
+2019-05-14 14:06:19.684  INFO 3376 --- [http-nio-8080-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-14 14:06:19.685  INFO 3376 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-05-14 14:06:19.692  INFO 3376 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2019-05-14 14:06:19.703  WARN 3376 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotAcceptableException: Could not find acceptable representation]
+2019-05-14 14:06:19.713  INFO 3376 --- [scheduling-1] c.t.m.component.ScheduledTasks           : ★★★★★ [ JOB-2. [ms] PNR UPDATE 건건이 호출 (async - webclient)]---  The time is now 14:06:19
+2019-05-14 14:06:19.738  INFO 3376 --- [scheduling-1] c.t.m.component.ScheduledTasks           : [STEP-1]  PNR UPDATE 용  파라미터 세팅 =[scheduling-1]
+2019-05-14 14:06:19.745  INFO 3376 --- [scheduling-1] c.t.m.component.ScheduledTasks           : ★★★★★ [ JOB-3. [ms] PNR UPDATE 성공시 Q 삭제 API 건건이 호출(async - webclient) ]---  The time is now 14:06:19
+2019-05-14 14:06:29.500  INFO 3376 --- [scheduling-1] c.t.m.component.ScheduledTasks           : ★★★★★ [ JOB-1. [ms] PNR UPDATE용 PNR 목록 가져오기 ]---  The time is now 14:06:29
+2019-05-14 14:06:29.505  INFO 3376 --- [scheduling-1] c.t.m.component.ScheduledTasks           : [STEP-1]  Q 조회 API 호출 =[scheduling-1]
+2019-05-14 14:06:29.509  INFO 3376 --- [scheduling-1] c.t.m.component.ScheduledTasks           : [STEP-2]  Q 조회 결과 있으면 Q 관리 테이블  저장=[scheduling-1]
+2019-05-14 14:06:29.514  INFO 3376 --- [scheduling-1] c.t.m.component.ScheduledTasks           : [STEP-3]  Q 관리 테이블 PNR 조회(신규 또는 실패)=[scheduling-1]
+2019-05-14 14:06:29.545  WARN 3376 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotAcceptableException: Could not find acceptable representation]
+2019-05-14 14:06:29.552  INFO 3376 --- [scheduling-1] c.t.m.component.ScheduledTasks           : ★★★★★ [ JOB-2. [ms] PNR UPDATE 건건이 호출 (async - webclient)]---  The time is now 14:06:29
+2019-05-14 14:06:29.563  INFO 3376 --- [scheduling-1] c.t.m.component.ScheduledTasks           : [STEP-1]  PNR UPDATE 용  파라미터 세팅 =[scheduling-1]
+2019-05-14 14:06:29.569  INFO 3376 --- [scheduling-1] c.t.m.component.ScheduledTasks           : ★★★★★ [ JOB-3. [ms] PNR UPDATE 성공시 Q 삭제 API 건건이 호출(async - webclient) ]---  The time is now 14:06:29
+2019-05-14 14:06:34.103  INFO 3376 --- [Thread-15] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2019-05-14 14:06:34.106  INFO 3376 --- [Thread-15] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

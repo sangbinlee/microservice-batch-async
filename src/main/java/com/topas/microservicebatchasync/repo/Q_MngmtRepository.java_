@@ -1,0 +1,10 @@
+package com.topas.microservicebatchasync.repo;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.topas.microservicebatchasync.vo.Q_Mngmt;
+ 
+
+public interface Q_MngmtRepository extends CrudRepository<Q_Mngmt, Integer> {
+
+}
