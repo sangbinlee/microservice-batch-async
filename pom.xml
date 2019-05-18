@@ -60,6 +60,52 @@
 		</dependency>
 		<!-- jsp end -->
 
+
+
+		<!-- mybatis -->
+		<dependency>
+			<groupId>org.mybatis.spring.boot</groupId>
+			<artifactId>mybatis-spring-boot-starter</artifactId>
+			<version>2.0.1</version>
+		</dependency>
+
+
+
+		<!-- oracle -->
+		<dependency>
+			<groupId>com.oracle</groupId>
+			<artifactId>ojdbc8</artifactId>
+			<version>12.2.0.1</version>
+		</dependency>
+
+		<!-- <dependency> -->
+		<!-- <groupId>com.oracle</groupId> -->
+		<!-- <artifactId>ojdbc6</artifactId> -->
+		<!-- <version>11.2.0.3</version> -->
+		<!-- </dependency> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- httpclient -->
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+
+
 		<!-- thymeleaf -->
 		<!-- <dependency> -->
 		<!-- <groupId>org.springframework.boot</groupId> -->
@@ -67,12 +113,12 @@
 		<!-- </dependency> -->
 
 
-		<!-- Optional, test for static content, bootstrap CSS-->
-<!-- 		<dependency> -->
-<!-- 			<groupId>org.webjars</groupId> -->
-<!-- 			<artifactId>bootstrap</artifactId> -->
-<!-- 			<version>3.3.7</version> -->
-<!-- 		</dependency> -->
+		<!-- Optional, test for static content, bootstrap CSS -->
+		<!-- <dependency> -->
+		<!-- <groupId>org.webjars</groupId> -->
+		<!-- <artifactId>bootstrap</artifactId> -->
+		<!-- <version>3.3.7</version> -->
+		<!-- </dependency> -->
 
 
 
@@ -173,26 +219,7 @@
 		<!-- <artifactId>spring-boot-starter-jdbc</artifactId> -->
 		<!-- </dependency> -->
 
-		<!-- mybatis -->
-		<!-- <dependency> -->
-		<!-- <groupId>org.mybatis.spring.boot</groupId> -->
-		<!-- <artifactId>mybatis-spring-boot-starter</artifactId> -->
-		<!-- <version>2.0.1</version> -->
-		<!-- </dependency> -->
 
-
-		<!-- oracle -->
-		<!-- <dependency> -->
-		<!-- <groupId>com.oracle</groupId> -->
-		<!-- <artifactId>ojdbc8</artifactId> -->
-		<!-- <version>12.2.0.1</version> -->
-		<!-- </dependency> -->
-
-		<!-- <dependency> -->
-		<!-- <groupId>com.oracle</groupId> -->
-		<!-- <artifactId>ojdbc6</artifactId> -->
-		<!-- <version>11.2.0.3</version> -->
-		<!-- </dependency> -->
 
 		<!-- mysql -->
 		<!-- <dependency> -->

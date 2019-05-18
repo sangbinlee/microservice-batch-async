@@ -8,6 +8,8 @@
 </head>
 <body>
 
-Something went wrong: ${status} ${error}
+Something went wrong: 
+<br> status: ${status} 
+<br> error : ${error}
 </body>
 </html>
