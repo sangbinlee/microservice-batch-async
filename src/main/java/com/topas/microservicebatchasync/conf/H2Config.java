@@ -20,28 +20,31 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 @Configuration
 @EnableTransactionManagement
-@EnableJpaRepositories(entityManagerFactoryRef = "postgresqlEntityManagerFactory"
-, transactionManagerRef = "postgresqlTransactionManager"
+@EnableJpaRepositories(entityManagerFactoryRef = "h2EntityManagerFactory"
+, transactionManagerRef = "h2TransactionManager"
 , basePackages = {
-		"com.topas.microservicebatchasync.jpa.postgres.repo" })
-public class PostgresConfig {
-	@Bean(name = "postgresqlDataSource")
-	@ConfigurationProperties(prefix = "postgresql.spring.datasource")
+		"com.topas.microservicebatchasync.jpa.h2.repo" })
+public class H2Config {
+	@Bean(name = "h2DataSource")
+	@ConfigurationProperties(prefix = "h2.spring.datasource")
 	public DataSource dataSource() {
 		return DataSourceBuilder.create().build();
 	}
 
-	@Bean(name = "postgresqlEntityManagerFactory")
+	@Bean(name = "h2EntityManagerFactory")
 	public LocalContainerEntityManagerFactoryBean barEntityManagerFactory(EntityManagerFactoryBuilder builder,
-			@Qualifier("postgresqlDataSource") DataSource dataSource) {
-		return builder.dataSource(dataSource).packages("com.topas.microservicebatchasync.jpa.postgres.domain").persistenceUnit("db2")
+			@Qualifier("h2DataSource") DataSource dataSource) {
+		return builder
+				.dataSource(dataSource)
+				.packages("com.topas.microservicebatchasync.jpa.h2.domain")
+				.persistenceUnit("h2")
 				.build();
 	}
 
-	@Bean(name = "postgresqlTransactionManager")
-	public PlatformTransactionManager postgresqlTransactionManager(
-			@Qualifier("postgresqlEntityManagerFactory") EntityManagerFactory postgresqlEntityManagerFactory) {
-		return new JpaTransactionManager(postgresqlEntityManagerFactory);
+	@Bean(name = "h2TransactionManager")
+	public PlatformTransactionManager h2TransactionManager(
+			@Qualifier("h2EntityManagerFactory") EntityManagerFactory h2EntityManagerFactory) {
+		return new JpaTransactionManager(h2EntityManagerFactory);
 	}
 
 }
