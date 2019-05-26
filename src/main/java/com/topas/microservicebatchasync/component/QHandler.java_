@@ -1,0 +1,28 @@
+package com.topas.microservicebatchasync.component;
+
+import org.springframework.http.MediaType;
+import org.springframework.stereotype.Component;
+import org.springframework.web.reactive.function.BodyInserters;
+import org.springframework.web.reactive.function.server.ServerRequest;
+import org.springframework.web.reactive.function.server.ServerResponse;
+
+import lombok.extern.slf4j.Slf4j;
+import reactor.core.publisher.Mono;
+@Slf4j
+@Component
+public class QHandler {
+//	public Mono<ServerResponse> select(ServerRequest request) {
+//		
+//		String currentThread = Thread.currentThread().getName();
+//		log.info("[QHandler]  QHandler =" + "[" + currentThread + "]");
+//		
+//		/**
+//		 * 
+//		 */
+//		String response = "Hello, Spring!";
+//		
+//		
+////		return ServerResponse.ok().contentType(MediaType.TEXT_PLAIN).body(BodyInserters.fromObject(response));
+//		return ServerResponse.ok().contentType(MediaType.APPLICATION_JSON).body(BodyInserters.fromObject(response));
+//	}
+}
